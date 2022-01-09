@@ -318,3 +318,9 @@ Command :> git push heroku main
 Command :> heroku logs -t
 Command :> heroku ps:restart
 ```
+
+* Never run "revision" command on prod
+```
+Command :> heroku run "alembic upgrade head"
+
+```
