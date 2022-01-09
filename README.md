@@ -1,3 +1,5 @@
+Heroku : https://fastapi-tuto.herokuapp.com/
+
 * Create a virtual environment
 ```> py -3 -m venv venv ```
 * Activate bat environment
@@ -302,4 +304,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+```
+
+* Deploy Heroku
+```
+- Heroku Postgres : https://devcenter.heroku.com/articles/heroku-postgresql
+Command :> heroku addons:create heroku-postgresql:hobby-dev
+
+Command :> heroku login
+Command :> heroku create <AppName>
+Command :> heroku git:remote -a <AppName>
+Command :> git push heroku main
+Command :> heroku logs -t
+Command :> heroku ps:restart
 ```
