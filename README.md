@@ -322,5 +322,19 @@ Command :> heroku ps:restart
 * Never run "revision" command on prod
 ```
 Command :> heroku run "alembic upgrade head"
+```
 
+* Ubuntu Command
+```
+Command :> sudo apt update && sudo apt upgrade -y
+Command :> sudo apt install python3-pip
+Command :> sudo pip3 install postgresql postgresql-contrib -y
+Command :> psql -U <name1>
+Command :> \password <name1>
+Command :> cd /etc/postgresql/<version>/main
+Command :> systemctl restart postgresql
+Command :> adduser <name2>
+Command :> usermod -aG sudo <name2>
+Command :> set -o allexport; source /home/<name2>/.env; set +o allexport
+Command :> gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 ```
