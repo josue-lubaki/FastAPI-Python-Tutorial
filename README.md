@@ -1,4 +1,6 @@
-Heroku : https://fastapi-tuto.herokuapp.com/
+Heroku : https://fastapi-tuto.herokuapp.com/ <br>
+Production : http://159.223.152.158/ <br>
+Course : https://www.youtube.com/watch?v=0sOvCWFmrtA&t=23834s&ab_channel=freeCodeCamp.org
 
 * Create a virtual environment
 ```> py -3 -m venv venv ```
