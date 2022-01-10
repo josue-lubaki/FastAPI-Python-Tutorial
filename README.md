@@ -340,3 +340,9 @@ Command :> usermod -aG sudo <name2>
 Command :> set -o allexport; source /home/<name2>/.env; set +o allexport
 Command :> gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 ```
+
+* Add [SSL certificate](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)
+```
+Command :> sudo snap install --classic certbot
+Command :> sudo certbot --nginx
+```
