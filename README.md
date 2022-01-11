@@ -1,5 +1,5 @@
 Heroku : https://fastapi-tuto.herokuapp.com/ <br>
-Production : http://159.223.152.158/ <br>
+Production : https://sappserver.xyz/ <br>
 Course : https://www.youtube.com/watch?v=0sOvCWFmrtA&t=23834s&ab_channel=freeCodeCamp.org
 
 * Create a virtual environment
@@ -345,4 +345,15 @@ Command :> gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.
 ```
 Command :> sudo snap install --classic certbot
 Command :> sudo certbot --nginx
+```
+
+* Add Firewall configuration
+```
+Command :> sudo ufw allow http
+Command :> sudo ufw allow https
+Command :> sudo ufw allow ssh
+Command :> sudo ufw allow 5432
+Command :> sudo ufw enable
+Command :> sudo ufw status
+Command :> sudo ufw delete http
 ```
