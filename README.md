@@ -20,7 +20,7 @@ async def read_root():
     return {"Message": "Hello World"}
 ```
 * Run the fastApi module
-```> uvicorn main:app --reload```
+```> uvicorn app.main:app --reload```
 * Field Types on Python using [Pydantic](https://pydantic-docs.helpmanual.io/) Library 
 ```
 class User(BaseModel):
