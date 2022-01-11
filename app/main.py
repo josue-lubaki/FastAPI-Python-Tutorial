@@ -35,6 +35,7 @@ def generate_html_response():
     <html>
         <head>
             <title>FastAPI - Tutorial</title>
+            <link rel="icon" href="https://ufmmmw.dm.files.1drv.com/y4mqGPFwLkEdHv8neWQT2u2Je_MO6STFzrf3UPzVZV3NMhELKnwb4qizeWCr62wEEyJiNPCK1JwjBMSe02runDXvwe39soqsOtSsj_cYViwru89VXvuUj853rVLx3yByFt9PmtXDU-SijeKaEdETjZ1uNqBQUV0szbCzv-Ad7Q0qRYvG2MmWK5Xg_NUE24pQlpJ-OR9MUUFdIafyglmlMwErg/android-chrome-512x512.png?psid=1"/>
         </head>
         <body>
             <style>
